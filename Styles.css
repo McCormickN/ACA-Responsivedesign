@@ -1,0 +1,84 @@
+.container{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "one two three";
+    margin: auto 20% auto 20%;
+
+}
+.header{
+    display: grid;
+    grid-area: header;
+    justify-content: center;
+    align-items: center;
+    background-color: turquoise;
+    color: white;
+    font-size: 30px;
+}
+
+.one{
+    grid-area: one;
+    text-align: center;
+    border-top:blue ;
+    border-width: 5px;
+    background-color: black;
+    color: white;
+}
+
+.two{
+    grid-area: two;
+    text-align: center;
+    border-top: orange;
+    border-width: 5px;
+    background-color: black;
+    color: white;
+}
+
+.three{
+    grid-area: three;
+    text-align: center;
+    border-top: turquoise;
+    border-width: 5px;
+    background-color: black;
+    color: white;
+}
+.boxone{
+    background-color: orangered;
+    padding: 10px;
+    margin: 50px 50px 25px 50px;
+}
+.boxtwo{
+    background-color: rgb(30, 163, 240);
+    padding: 10px;
+    margin: 50px 50px 25px 50px;
+
+}
+.boxthree{
+    background-color: turquoise;
+    padding: 10px;
+    margin: 50px 50px 25px 50px;
+}
+@media (max-width:576px){
+.container{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows:1fr;
+    grid-template-areas: 
+    "header"
+    "one"
+    "two"
+    "three";}
+.header{
+    height: 250px;
+}
+.one{
+    background-color: rgb(97, 84, 84);
+}
+.two{
+    background-color: rgb(97, 84, 84);
+}
+.three{
+    background-color: rgb(97, 84, 84);
+}
